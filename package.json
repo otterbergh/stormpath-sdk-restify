@@ -1,8 +1,8 @@
 {
-  "name": "stormpath-sdk-express",
-  "version": "0.4.9",
+  "name": "stormpath-sdk-restify",
+  "version": "0.0.1",
   "main": "index.js",
-  "description": "Official Stormpath SDK for Express.js",
+  "description": "Unofficial Stormpath SDK for restify.js",
   "keywords": [
     "token authentication",
     "stormpath",
@@ -20,24 +20,21 @@
     "access control",
     "password",
     "password hash",
-    "express"
+    "restify"
   ],
   "license": "Apache-2.0",
-  "homepage": "https://github.com/stormpath/stormpath-sdk-express",
-  "bugs": "https://github.com/stormpath/stormpath-sdk-express/issues",
+  "homepage": "https://github.com/otterbergh/stormpath-sdk-restify",
+  "bugs": "https://github.com/otterbergh/stormpath-sdk-restify.git/issues",
   "author": {
-    "name": "Stormpath, Inc.",
-    "email": "support@stormpath.com",
-    "url": "http://www.stormpath.com"
+    "name": "Henric Otterberg",
+    "email": "henric@otterberg.co",
+    "url": "http://otterberg.co"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/stormpath/stormpath-sdk-express.git"
+    "url": "https://github.com/otterbergh/stormpath-sdk-restify.git"
   },
   "scripts": {
-    "test": "mocha --timeout=5000 --reporter spec --bail --check-leaks test/",
-    "test-debug": "mocha --timeout=5000 --debug-brk --reporter spec --bail --check-leaks test/",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --timeout=5000 --reporter dot --check-leaks test/"
   },
   "dependencies": {
     "node-uuid": "^1.4.2",
@@ -49,7 +46,7 @@
   "devDependencies": {
     "mocha": "^2.1.0",
     "supertest": "^0.15.0",
-    "express": "^4.11.1",
+    "restify": "^3.0.3",
     "body-parser": "^1.10.2",
     "istanbul": "^0.3.5",
     "njwt": "0.0.0",
